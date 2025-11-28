@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD Local Storage - Tarefas com Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+    
+<body class="bg-light">
+
+    <!-- ===== HEADER ===== -->
+    <header class="bg-secondary text-bg-light text-center py-4 shadow-sm">
+        <h1 class="mb-0">Gerenciador de Tarefas</h1>
+        <p class="mb-0">CRUD com Local Storage e jQuery</p>
+    </header>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">LocalStorage CRUD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="integrantes.html">Integrantes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN ===== -->
+    <main class="container my-5">
+        <!-- Section de Tarefas -->
+    <section id="tarefas" class="mb-5">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">Cadastro de Pessoas</h4>
+            </div>
+                <div class="card-body">
+                    <div class="row g-3 align-items-center mb-3">
+                            <div class="col-12 col-md-5">
+                            <label for="nome" class="form-label visually-hidden">Nome</label>
+                            <input type="text" id="nome" class="form-control" placeholder="Nome Completo">
+                        </div>
+                            <div class="col-12 col-md-4">
+                            <label for="email" class="form-label visually-hidden">E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <label for="dataNascimento" class="form-label"><b>Data de Nasc.</b></label>
+                            <input type="date" id="dataNascimento" class="form-control">
+                        </div>
+                        <div class="col-12 col-md-4 d-grid mx-auto mt-3">
+                            <button id="btnAdd" class="btn btn-success">Cadastrar Pessoa</button>
+                        </div>
+                    </div>
+                    <ul id="lista" class="list-group mt-4"></ul>
+                </div>                    
+        </div>
+    </section>
+
+        <!-- Section Sobre -->
+        <section id="sobre" class="text-center mt-5">
+            <h4>Sobre o projeto</h4>
+            <p>Agora as tarefas possuem <strong>descrição e data</strong>, armazenadas em <strong>Local
+            Storage</strong>.</p>
+            <p>Desenvolvido com <strong>Bootstrap 5</strong> e <strong>jQuery</strong>.</p>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 - CRUD com Local Storage</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

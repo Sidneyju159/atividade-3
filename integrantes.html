@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Integrantes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body class="bg-light">
+
+    <!-- ===== HEADER ===== -->
+
+    <header class="bg-secondary text-bg-light text-center py-4 shadow">
+        <h1 class="mb-0">Sistema de Filtro de Pessoas.</h1>
+        <p class="mb-0">Gerenciamento de  filtro (Nome, E-mail.)</p>
+    </header>
+
+    <!-- ===== NAVBAR ===== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+            <a class="navbar-brand" href="index.html">App e Web "CRUD"</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Links de Navegação -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="integrantes.html">Integrantes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN - INTEGRANTES ===== -->
+
+    <main class="container my-5 ">
+        <!-- Section de Lista de Integrantes -->
+        <section id="integrantes" class="mb-5">
+            <div class="card shadow">
+                <div class="card-header bg-secondary text-white">
+                    <h4 class="mb-0">Integrantes Cadastrados</h4>
+                </div>
+                <div class="card-body">
+                    <!-- Campo de Busca/Filtro -->
+                    <div class="mb-4">
+                        <label for="campoBusca" class="form-label"><b>Filtrar por Nome ou E-mail:</b></label>
+                        <input type="text" id="campoBusca" class="form-control" placeholder="Digite para buscar...">
+                    </div>
+                    <!-- Lista de Integrantes (Será preenchida pelo JS) -->
+                    <ul id="lista" class="list-group">
+                        <!-- Itens serão carregados aqui -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="text-center mt-5">
+            <h4>Sobre o projeto</h4>
+            <p>Agora as tarefas podem tamber ser filtradas por <strong>nome e ou email</strong>, armazenadas em <strong>Local
+            Storage</strong>.</p>
+            <p>Desenvolvido com <strong>Bootstrap 5</strong> e <strong>jQuery</strong>.</p>
+        </section>
+
+    </main>
+
+
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+
+        <p class="mb-0">&copy; 2025 - CRUD Local Storage</p>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script da Aplicação -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+
+</html>
